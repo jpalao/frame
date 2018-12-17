@@ -1,6 +1,5 @@
 'use strict';
 
-
 const Account = require('../models/account');
 const Boom = require('boom');
 const Config = require('../../config');
