@@ -1,4 +1,5 @@
 'use strict';
+
 const AdminGroup = require('../models/admin-group');
 const Boom = require('boom');
 const Joi = require('joi');

@@ -1,4 +1,5 @@
 'use strict';
+
 const AuthAttempt = require('../../../server/models/auth-attempt');
 const Code = require('code');
 const Config = require('../../../config');

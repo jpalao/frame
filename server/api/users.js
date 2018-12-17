@@ -1,4 +1,5 @@
 'use strict';
+
 const Admin = require('../models/admin');
 const Account = require('../models/account');
 const Boom = require('boom');

@@ -1,4 +1,5 @@
 'use strict';
+
 const Assert = require('assert');
 const Joi = require('joi');
 const MongoModels = require('mongo-models');
