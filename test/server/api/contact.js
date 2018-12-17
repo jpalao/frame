@@ -1,4 +1,5 @@
 'use strict';
+
 const Code = require('code');
 const Contact = require('../../../server/api/contact');
 const Hapi = require('hapi');

@@ -1,4 +1,6 @@
 'use strict';
+
+
 const Account = require('../models/account');
 const Boom = require('boom');
 const Config = require('../../config');
@@ -96,7 +98,7 @@ const register = function (server, serverOptions) {
             // create auth header
 
             const credentials = `${session._id}:${session.key}`;
-            const authHeader = `Basic ${new Buffer(credentials).toString('base64')}`;
+            const authHeader = `Basic ${Buffer.from(credentials).toString('base64')}`;
 
             return {
                 user: {

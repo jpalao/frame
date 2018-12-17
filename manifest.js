@@ -1,4 +1,5 @@
 'use strict';
+
 const Confidence = require('confidence');
 const Config = require('./config');
 const Package = require('./package.json');

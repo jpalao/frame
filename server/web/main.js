@@ -1,6 +1,8 @@
 'use strict';
 
 
+
+
 const register = function (server, options) {
 
     server.route({

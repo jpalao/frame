@@ -1,4 +1,5 @@
 'use strict';
+
 const Admin = require('../../../server/models/admin');
 const Admins = require('../../../server/api/admins');
 const Auth = require('../../../server/auth');

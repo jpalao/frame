@@ -1,4 +1,6 @@
 'use strict';
+
+
 const AuthAttempt = require('../models/auth-attempt');
 const Bcrypt = require('bcrypt');
 const Boom = require('boom');
@@ -73,7 +75,7 @@ const register = function (server, serverOptions) {
             const sessionId = request.pre.session._id;
             const sessionKey = request.pre.session.key;
             const credentials = `${sessionId}:${sessionKey}`;
-            const authHeader = `Basic ${new Buffer(credentials).toString('base64')}`;
+            const authHeader = `Basic ${Buffer.from(credentials).toString('base64')}`;
 
             return {
                 user: {
